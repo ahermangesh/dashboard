@@ -1,5 +1,131 @@
 /* Basic styles for the dashboard project */
 
 body {
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif; /* Use a modern font */
+    background: linear-gradient(to bottom, #e6e6ff, #d1b3ff); /* Gradient background */
+    display: flex;
+    flex-direction: column; /* Stack logo and container vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+    margin: 0;
+    padding-top: 5vh; /* Add some top padding */
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 200px; /* Adjust logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo image */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    border-radius: 25px; /* Even more rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    width: 380px; /* Wider container */
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 15px;
+    color: #6a4c9c;
+    font-size: 2em;
+    font-weight: 800; /* Extra bold heading */
+}
+
+.login-container p {
+    color: #777;
+    margin-bottom: 35px;
+    font-size: 1em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #8860d0; /* Purple focus */
+    outline: none;
+}
+
+button.social-login-btn,
+button.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+button.login-btn {
+    background-color: #8860d0;
+    color: white;
+    margin-top: 15px;
+}
+
+button.login-btn:hover {
+    background-color: #7048b8;
+}
+
+.social-login-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-login-btn:hover {
+    background-color: #f9f9f9;
+}
+
+.social-login-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.signup-link {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #777;
+}
+
+.signup-link a {
+    color: #8860d0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
 }
