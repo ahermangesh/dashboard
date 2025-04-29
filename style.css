@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(145deg, #e2e8ff, #ffffff);
+    background: linear-gradient(145deg, #f0f2f5, #ffffff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,11 +67,6 @@ body {
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus {
-    border-color: #8860d0;
-    outline: none;
-}
-
 button.social-login-btn,
 button.login-btn {
     display: flex;
@@ -99,9 +94,10 @@ button.login-btn:hover {
 
 .social-login-btn {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: none; /* Remove border */
     color: #333;
     margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .social-login-btn:hover {
